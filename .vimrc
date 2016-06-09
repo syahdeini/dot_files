@@ -4,6 +4,17 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+"Set powerline
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+
+" Always show statusline
+set laststatus=2
+"
+" " Use 256 colours (Use this setting only if your terminal supports 256
+" colours)
+set t_Co=256
+
+
 " alteratively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
@@ -43,7 +54,7 @@ Plugin 'tpope/vim-fugitive'
 
 " Using powerline
 " http://powerline.readthedocs.io/en/latest/
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+" Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " All of you plugins must be added before the following line
 call vundle#end()
@@ -113,6 +124,9 @@ endif
 
 " Switching dark and light theme
 call togglebg#map("<F5>")
+
+" Enable powerline
+let g:Powerline_symbols = 'fancy'
 
 "Extra info
 "in YouCompleteMe require jedi,
