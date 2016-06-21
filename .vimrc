@@ -122,6 +122,9 @@ else
 	colorscheme zenburn
 endif
 
+"Toggle for Nerdtree
+map <C-n> :NERDTreeToggle<CR>
+
 " Switching dark and light theme
 call togglebg#map("<F5>")
 
