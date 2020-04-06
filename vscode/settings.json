@@ -1,0 +1,12 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Cobalt2",
+    "window.zoomLevel": 0,
+    "git.autofetch": true,
+    "terminal.integrated.inheritEnv": false,
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "python.dataScience.askForKernelRestart": false,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 3000,
+}
